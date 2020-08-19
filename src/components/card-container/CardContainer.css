@@ -1,0 +1,6 @@
+.card-container {
+  color: red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

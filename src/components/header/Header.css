@@ -1,5 +1,31 @@
-@import "../../App.less";
+@import "../../App.css";
 
-.header-link :hover {
+.header {
+  display: flex;
+  width: 100%;
+  height: 5em;
+}
+
+.adam-wellborn {
+  padding-left: 40px;
+  padding-top: 20px;
+  font-size: 22px;
+  float: left;
+}
+
+.header-right {
+  display: flex;
+  margin-left: auto;
+  float: right;
+  margin-right: 20px;
+}
+
+.header-link {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header-link:hover {
   cursor: pointer;
 }

@@ -1,11 +1,11 @@
 import React from 'react';
-import './Header.less';
+import './Header.css';
 
 function Header() {
   return (
     <div className="header">
       <div className="adam-wellborn">Adam Wellborn</div>
-      <div className="right-justified">
+      <div className="header-right">
         <div className="header-link">About</div>
         <div className="header-link" onClick={onInstagramClick}>Instagram</div>
         <div className="header-link">Linked In</div>
