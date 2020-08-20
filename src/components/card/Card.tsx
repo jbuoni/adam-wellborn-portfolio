@@ -1,16 +1,17 @@
-import React, { CSSProperties } from 'react';
+import React from 'react';
 import './Card.css';
 
 type CardProps = {
-  color: string
+  color: string,
+  onCardClick: Function
 };
 
-function Card({ color }: CardProps) {
+function Card({ color, onCardClick }: CardProps) {
   const style:any = {
-    'background-color': color
+    backgroundColor: color
   };
   return (
-    <div className="card" style={style}></div>
+    <div className="card" style={style} onClick={() => onCardClick()}></div>
   );
 }
 
