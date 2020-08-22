@@ -4,10 +4,12 @@ import './App.css';
 import { Header } from './components/header';
 import { CardContainer } from './components/card-container';
 import { Overlay } from './components/overlay';
+import ICard from './card-data/icard';
 
-interface AppState {
+type AppState = {
   isOverlayOpen: boolean;
   currentOverlay?: string;
+  childComponentData?: ICard;
 }
 
 class App extends React.Component<{}, AppState> {
@@ -17,20 +19,28 @@ class App extends React.Component<{}, AppState> {
     this.state = { isOverlayOpen: false }
   }
 
-  onOverlayClick() {
-    this.setState({ isOverlayOpen: !this.state.isOverlayOpen });
+  private onOverlayClick(cardData?: ICard) {
+    this.setState({
+      isOverlayOpen: !this.state.isOverlayOpen,
+      childComponentData: cardData
+    });
+  }
+
+  private exitOverlay() {
+    this.setState({ isOverlayOpen: false });
   }
 
   render() {
+    const { childComponentData } = this.state;
     return (
       <>
         {
           this.state.isOverlayOpen &&
-          <Overlay exitClick={() => this.onOverlayClick()}/>
+          <Overlay exitClick={() => this.exitOverlay()} childComponentData={childComponentData} />
         }
         <div className="App">
-        <Header />
-        <CardContainer onCardClick={() => this.onOverlayClick()} />
+        <Header aboutClick={(id: string) => this.onOverlayClick()}/>
+        <CardContainer onCardClick={ (cardData?: ICard) => this.onOverlayClick(cardData)} />
       </div>
       </>
     );

@@ -3,6 +3,10 @@ import './CardContainer.css';
 
 import { Card } from '../card';
 
+//TODO Temp
+import cardData from '../../card-data/card-data';
+import ICard from '../../card-data/icard';
+
 type CardContainerProps = {
   onCardClick: Function
 };
@@ -10,12 +14,7 @@ type CardContainerProps = {
 function CardContainer({ onCardClick }: CardContainerProps) {
   return (
     <div className="card-container">
-      <Card color='red' onCardClick={onCardClick} />
-      <Card color='blue' onCardClick={onCardClick} />
-      <Card color='yellow' onCardClick={onCardClick} />
-      <Card color='grey' onCardClick={onCardClick} />
-      <Card color='green' onCardClick={onCardClick} />
-      <Card color='black' onCardClick={onCardClick} />
+      { cardData.map((data: ICard) => <Card onCardClick={onCardClick} cardData={data} />)}
     </div>
   );
 }

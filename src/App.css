@@ -1,3 +1,8 @@
+:root {
+ --main-color: black;
+ --secondary-color: #F0F;
+}
+
 .App {
   text-align: center;
 }
@@ -36,4 +41,3 @@
     transform: rotate(360deg);
   }
 }
-

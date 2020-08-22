@@ -5,16 +5,18 @@
   height:100%;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .overlay-opacity {
   width: 50%;
   height:100%;
   background-color: black;
-  opacity: .5;
+  opacity: .2;
 }
 
 .overlay-content {
+  padding-left: 20px;
   width: 50%;
   height:100%;
   background-color: white;
@@ -22,6 +24,19 @@
 
 .exit-overlay {
   font-size: 35px;
-  padding: 10px 15px 10px 10px;
+  padding: 20px 20px 10px 10px;
   float: right;
+}
+
+.exit-container {
+  margin-left: auto;
+}
+
+.top-component {
+  display: flex;
+}
+
+.overlay-title {
+  padding-top: 20px;
+  font-size: 30px;
 }

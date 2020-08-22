@@ -1,13 +1,17 @@
 import React from 'react';
 import './Header.css';
 
-function Header() {
+type HeaderProps = {
+  aboutClick: Function
+};
+
+function Header({ aboutClick }: HeaderProps) {
   return (
     <div className="header">
       <div className="adam-wellborn">Adam Wellborn</div>
       <div className="header-right">
-        <div className="header-link">About</div>
-        <div className="header-link" onClick={onInstagramClick}>Instagram</div>
+        <div className="header-link" onClick={() => aboutClick()}>About</div>
+        <div className="header-link" onClick={() => onInstagramClick()}>Instagram</div>
         <div className="header-link">Linked In</div>
       </div>
     </div>

@@ -28,4 +28,6 @@
 
 .header-link:hover {
   cursor: pointer;
+  color: var(--secondary-color);
+  text-decoration: underline;
 }
