@@ -3,4 +3,5 @@ export default interface ICard {
   name: string;
   cardImage: any;
   cardHoverImage: any;
+  descripion: string;
 }

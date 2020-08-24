@@ -1,4 +1,4 @@
-import ICard from "./icard";
+import ICard from './icard';
 
 // Images
 import lbMain from '../images/lbf1.png';
@@ -15,37 +15,43 @@ const cardData: ICard[] = [
     id: 'lbf',
     name: 'Farm',
     cardImage: lbMain,
-    cardHoverImage: lbHover
+    cardHoverImage: lbHover,
+    descripion: 'Side project of mine. I am in the progress of redoing my parents farm website. It requires a backend and a UI which will allow for someone not techy to update it easily.'
   },
   {
     id: 'angular',
     name: 'Angular',
     cardImage: aMain,
-    cardHoverImage: aHover
+    cardHoverImage: aHover,
+    descripion: 'Side project of mine. I am in the progress of redoing my parents farm website. It requires a backend and a UI which will allow for someone not techy to update it easily.'
   },
   {
     id: 'ml',
     name: 'Strategy Learner',
     cardImage: mlMain,
-    cardHoverImage: mlHover
+    cardHoverImage: mlHover,
+    descripion: 'Side project of mine. I am in the progress of redoing my parents farm website. It requires a backend and a UI which will allow for someone not techy to update it easily.'
   },
   {
     id: 'moasic',
     name: 'Mosaic Python',
     cardImage: mMain,
-    cardHoverImage: mHover
+    cardHoverImage: mHover,
+    descripion: 'Side project of mine. I am in the progress of redoing my parents farm website. It requires a backend and a UI which will allow for someone not techy to update it easily.'
   },
   {
     id: 'lbf',
     name: 'Farm',
     cardImage: lbMain,
-    cardHoverImage: lbHover
+    cardHoverImage: lbHover,
+    descripion: 'Side project of mine. I am in the progress of redoing my parents farm website. It requires a backend and a UI which will allow for someone not techy to update it easily.'
   },
   {
     id: 'angular',
     name: 'Angular',
     cardImage: aMain,
-    cardHoverImage: aHover
+    cardHoverImage: aHover,
+    descripion: 'Side project of mine. I am in the progress of redoing my parents farm website. It requires a backend and a UI which will allow for someone not techy to update it easily.'
   }
 ]
 

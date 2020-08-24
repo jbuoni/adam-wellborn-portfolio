@@ -1,10 +1,14 @@
 import React from 'react';
 import './CardOverlay.css';
+import ICard from '../../card-data/icard';
 
-function CardOverlay() {
+type CardProps = {
+  cardData: ICard
+}
+function CardOverlay({ cardData }: CardProps) {
   return (
     <div className="card-container">
-      <h1>I am A Card</h1>
+      <h1>{cardData.descripion}</h1>
     </div>
   );
 }
