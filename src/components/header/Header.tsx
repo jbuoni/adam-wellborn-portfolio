@@ -51,7 +51,6 @@ function FullHeader({ aboutClick }: HeaderProps) {
     <div className="header header-full sticky">
       <div className="header-left" >
         <img  className="header-logo" src={logo} alt="logo" />
-        <div className="adam-wellborn">Marketing & GRFX</div>
       </div>
       <div className="header-right">
         <div className="header-link" onClick={() => aboutClick()}>About</div>

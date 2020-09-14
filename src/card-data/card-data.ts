@@ -1,56 +1,60 @@
 import ICard from './icard';
 
 // Images
-import lbMain from '../images/lbf1.png';
-import lbHover from '../images/lbf2.png';
-import aMain from '../images/angular1.png';
-import aHover from '../images/angular2.png';
-import mlMain from '../images/mosaic1.png';
-import mlHover from '../images/mosaic2.png';
-import mMain from '../images/exp1.png';
-import mHover from '../images/bbpplot.png';
+import cutsew from '../images/cards/Cutsew.jpg';
+import cutsewHover from '../images/cards/Cutsew-RO.jpg';
+import hgd from '../images/cards/HGD-Law.jpg';
+import hgdHover from '../images/cards/HGD-Law-RO.jpg';
+import atlLaser from '../images/cards/Atl-Laser2.jpg';
+import atlLaserHover from '../images/cards/Atl-Laser-RO.jpg';
+import illustration from '../images/cards/Illustration2.jpg';
+import illustrationHover from '../images/cards/Illustration2-RO.jpg';
+import logos from '../images/cards/Logos.jpg';
+import logosHover from '../images/cards/Logos-RO.jpg';
+import video from '../images/cards/Video.jpg';
+import videoHover from '../images/cards/Video-RO.jpg';
 
 const cardData: ICard[] = [
   {
-    id: 'lbf',
-    name: 'Farm',
-    cardImage: lbMain,
-    cardHoverImage: lbHover,
+    id: 'cutset',
+    name: 'Cut Sew',
+    cardImage: cutsew,
+    cardHoverImage: cutsewHover,
     descripion: 'Side project of mine. I am in the progress of redoing my parents farm website. It requires a backend and a UI which will allow for someone not techy to update it easily.'
   },
   {
-    id: 'angular',
-    name: 'Angular',
-    cardImage: aMain,
-    cardHoverImage: aHover,
+    id: 'hgd',
+    name: 'HGD Law',
+    cardImage: hgd,
+    cardHoverImage: hgdHover,
     descripion: 'Side project of mine. I am in the progress of redoing my parents farm website. It requires a backend and a UI which will allow for someone not techy to update it easily.'
   },
   {
-    id: 'ml',
-    name: 'Strategy Learner',
-    cardImage: mlMain,
-    cardHoverImage: mlHover,
+    id: 'atlLaser',
+    name: 'Atlanta Laser',
+    cardImage: atlLaser,
+    cardHoverImage: atlLaserHover,
     descripion: 'Side project of mine. I am in the progress of redoing my parents farm website. It requires a backend and a UI which will allow for someone not techy to update it easily.'
   },
   {
-    id: 'moasic',
-    name: 'Mosaic Python',
-    cardImage: mMain,
-    cardHoverImage: mHover,
+    id: 'illustration',
+    name: 'Illustrations',
+    cardImage: illustration,
+    cardHoverImage: illustrationHover,
     descripion: 'Side project of mine. I am in the progress of redoing my parents farm website. It requires a backend and a UI which will allow for someone not techy to update it easily.'
   },
   {
-    id: 'lbf',
-    name: 'Farm',
-    cardImage: lbMain,
-    cardHoverImage: lbHover,
+    id: 'logos',
+    name: 'Logos',
+    cardImage: logos,
+    cardHoverImage: logosHover,
     descripion: 'Side project of mine. I am in the progress of redoing my parents farm website. It requires a backend and a UI which will allow for someone not techy to update it easily.'
   },
   {
-    id: 'angular',
-    name: 'Angular',
-    cardImage: aMain,
-    cardHoverImage: aHover,
+    id: 'videos',
+    name: 'Videos',
+    cardImage: video,
+    cardHoverImage: videoHover,
     descripion: 'Side project of mine. I am in the progress of redoing my parents farm website. It requires a backend and a UI which will allow for someone not techy to update it easily.'
   }
 ]
